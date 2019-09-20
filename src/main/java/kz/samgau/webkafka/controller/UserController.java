@@ -12,15 +12,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashSet;
-import java.util.Set;
-
 @RestController
 @RequestMapping("/user")
 public class UserController {
 
     private UserService userService;
-    private final ModelMapper modelMapper;
+    private ModelMapper modelMapper;
 
     @Autowired
     public UserController(UserService userService, ModelMapper modelMapper) {
